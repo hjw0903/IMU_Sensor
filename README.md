@@ -30,7 +30,7 @@ cp -r RTIMULib2/RTEllipsoidFit ../
 
 > sudo nano /etc/modules
 : make sure that both these lines are uncommented in this file:
-    i2c‐dev
+  i2c‐dev
     i2c‐bcm2708 # add this line, it is needed
 
 >sudo nano /etc/udev/rules.d/90‐i2c.rules
@@ -45,7 +45,6 @@ dtparam=i2c1_baudrate=400000dt
 dtparam=i2c_arm=on
 dtparam=spi=on
 
-
 >sudo reboot
 
 pi@raspberrypi:~/wheelchair_project/wheelchair_files $ ls /dev/i*
@@ -55,6 +54,7 @@ pi@raspberrypi:~/wheelchair_project/wheelchair_files $ ls /dev/i*
 mice
 pi@raspberrypi:~/wheelchair_project/wheelchair_files $ cd RTEllipsoidFit/
 pi@raspberrypi:~/wheelchair_project/wheelchair_files/RTEllipsoidFit $ i2cdetect -y 1
+
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- 1e -- 
@@ -64,6 +64,7 @@ pi@raspberrypi:~/wheelchair_project/wheelchair_files/RTEllipsoidFit $ i2cdetect 
 50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 60: -- -- -- -- -- -- -- -- -- -- -- 6b -- -- -- -- 
 70: -- -- -- -- -- -- -- --                         
+
 pi@raspberrypi:~/wheelchair_project/wheelchair_files/RTEllipsoidFit $ i2cdump -y 0x6b
 Error: No address specified!
 Usage: i2cdump [-f] [-y] [-r first-last] I2CBUS ADDRESS [MODE [BANK [BANKREG]]]
@@ -77,7 +78,9 @@ Usage: i2cdump [-f] [-y] [-r first-last] I2CBUS ADDRESS [MODE [BANK [BANKREG]]]
     i (I2C block)
     c (consecutive byte)
     Append p for SMBus PEC
+
 pi@raspberrypi:~/wheelchair_project/wheelchair_files/RTEllipsoidFit $ i2cdump -y 1 0x6b
+
 No size specified (using byte-data access)
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f    0123456789abcdef
 00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 68    ...............h
@@ -96,7 +99,6 @@ c0: 00 00 00 00 02 3c 24 4c 1c 22 00 00 00 00 00 00    ....?<$L?"......
 d0: 00 00 00 00 ff 01 00 00 00 00 00 00 00 00 00 00    .....?..........
 e0: 07 00 00 00 07 00 00 00 00 10 00 00 00 00 00 00    ?...?....?......
 f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a0    ...............?
-
 
 git clone https://github.com/OldCC/scripts.git
 
