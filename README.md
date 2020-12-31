@@ -1,8 +1,8 @@
-# IMU Sensor Setting and Code
+## IMU Sensor Setting and Code
 This code is made for the Wheelchair project which has been processed until May, 2020 at the Red River College.
 The code is modified and followed the setting from the open source code.
 
-# Setting the system for IMU Sensor
+## Setting the system for IMU Sensor
 '''
 Created on Wed Jul 23 13:19 2018
 @author: Jungwon Hwang
