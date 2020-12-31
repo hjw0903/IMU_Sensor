@@ -41,7 +41,7 @@ sudo make install
 cp -r RTIMULib2/RTEllipsoidFit ../
 
 
->> sudo nano /etc/modules
+> sudo nano /etc/modules
 
 : make sure that both these lines are uncommented in this file:
 
@@ -50,14 +50,14 @@ cp -r RTIMULib2/RTEllipsoidFit ../
     i2c‐bcm2708 # add this line, it is needed
     
 
->> sudo nano /etc/udev/rules.d/90‐i2c.rules
+> sudo nano /etc/udev/rules.d/90‐i2c.rules
 
 : add
 
 KERNEL=="i2c‐[0‐7]",MODE="0666"
 
 
->> sudo nano /boot/config.txt
+> sudo nano /boot/config.txt
 
 : add at the botto
 
@@ -71,8 +71,7 @@ dtparam=i2c_arm=on
 dtparam=spi=on
 
 
-
->> sudo reboot
+> sudo reboot
 
 
 pi@raspberrypi:~/wheelchair_project/wheelchair_files $ ls /dev/i*
@@ -175,9 +174,9 @@ f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a0    ...............?
 git clone https://github.com/OldCC/scripts.git
 
 
->> cd /home/pi/wheel/scripts/
+> cd /home/pi/wheel/scripts/
 
->> sudo python imu.py
+> sudo python imu.py
 
 // This code uses the sensor fusion data. It applies the filters to get an accurate data like as Kalman‐
 
