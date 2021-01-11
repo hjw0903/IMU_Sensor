@@ -1,4 +1,7 @@
-## Setting IMU sensor on the Raspberry Pi.
+LSM9DS1 9DOF IMU sensor is used for this code.  
+LSM9DS1 ----<i2c>----Raspberry Pi
+
+### Setting IMU sensor on the Raspberry Pi.
 <pre>
 Created on Wed Jul 23 13:19 2018  
 @author: Jungwon Hwang  
