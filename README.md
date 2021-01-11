@@ -13,7 +13,8 @@ sudo apt-get install octave // for calibration
 This following command is needed to fix the error message:   
 Error: missing `server' JVM at `/usr/lib/jvm/java-8-openjdk-armhf/jre/lib/arm/server/libjvm.so'.  
   
-cp -r /usr/lib/jvm/java-8-openjdk-armhf/jre/lib/arm/client /usr/lib/jvm/java-8-openjdk-armhf/jre/lib/arm/server   
+cp -r /usr/lib/jvm/java-8-openjdk-armhf/jre/lib/arm/client   
+      /usr/lib/jvm/java-8-openjdk-armhf/jre/lib/arm/server   
   
 git clone https://github.com/richardstechnotes/RTIMULib2.git  
   
