@@ -1,6 +1,5 @@
-<pre>
 ## Setting IMU sensor on the Raspberry Pi.
-
+<pre>
 Created on Wed Jul 23 13:19 2018  
 @author: Jungwon Hwang  
 
@@ -11,7 +10,8 @@ sudo apt-get install cmake
 sudo apt-get install python-dev  
 sudo apt-get install octave // for calibration  
   
-This following command is needed to fix the error message: Error: missing `server' JVM at `/usr/lib/jvm/java-8-openjdk-armhf/jre/lib/arm/server/libjvm.so'.  
+This following command is needed to fix the error message:   
+Error: missing `server' JVM at `/usr/lib/jvm/java-8-openjdk-armhf/jre/lib/arm/server/libjvm.so'.  
   
 cp -r /usr/lib/jvm/java-8-openjdk-armhf/jre/lib/arm/client /usr/lib/jvm/java-8-openjdk-armhf/jre/lib/arm/server   
   
