@@ -49,9 +49,9 @@ pi@raspberrypi:~/wheelchair_project/wheelchair_files $ ls /dev/i*
   
 /dev/input:  
 mice  
-pi@raspberrypi:~/wheelchair_project/wheelchair_files $ cd RTEllipsoidFit/  
-pi@raspberrypi:~/wheelchair_project/wheelchair_files/RTEllipsoidFit $ i2cdetect -y 1  
-     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f  
+cd RTEllipsoidFit/  
+i2cdetect -y 1  
+    0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f  
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --   
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- 1e --   
 20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --   
