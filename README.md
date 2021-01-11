@@ -103,7 +103,7 @@ git clone https://github.com/OldCC/scripts.git
 // This code uses the sensor fusion data. It applies the filters to get an accurate data like as Kalman‐  
 filtered quaternion.  
   
-If you want to check the data, you can add the code before time.sleep().  
+# If you want to check the data, you can add the code before time.sleep().  
 print("Heading: %f" %(heading)) # Add for checking the value  
 print("ypr: %f %f %f" %(yaw, pitch, roll))  
   
