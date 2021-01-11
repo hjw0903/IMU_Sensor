@@ -60,7 +60,8 @@ i2cdetect -y 1
 50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --   
 60: -- -- -- -- -- -- -- -- -- -- -- 6b -- -- -- --   
 70: -- -- -- -- -- -- -- --                           
-pi@raspberrypi:~/wheelchair_project/wheelchair_files/RTEllipsoidFit $ i2cdump -y 0x6b  
+  
+i2cdump -y 0x6b  
 Error: No address specified!  
 Usage: i2cdump [-f] [-y] [-r first-last] I2CBUS ADDRESS [MODE [BANK [BANKREG]]]  
   I2CBUS is an integer or an I2C bus name  
