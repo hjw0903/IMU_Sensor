@@ -1,5 +1,9 @@
 LSM9DS1 9DOF IMU sensor is used for this code.  
-LSM9DS1 ----(i2c)----Raspberry Pi
+LSM9DS1 ----(i2c)----Raspberry Pi  
+  
+This setting instruction is from the KING TIDE SAILING(A RASPBERRY PI WIRELESS NMEA-0183 MULTIPLEXER)  
+https://kingtidesailing.blogspot.com/2016/04/make-wireless-nmea-0183-multiplexer.html  
+
 
 ### Setting IMU sensor on the Raspberry Pi.
 <pre>
